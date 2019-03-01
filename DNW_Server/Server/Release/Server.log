@@ -1,0 +1,150 @@
+﻿生成启动时间为 2019/2/26 18:48:37。
+     1>项目“C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\Server.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\HZ\Desktop\shenyj\DNW_Server\Server\ /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\include\protoFiles\command.txt.pb.cc ..\include\protoFiles\scene.txt.pb.cc Cache\Cache.cpp ClientEntity\ClientEntity.cpp DBServer\DBServer.cpp GameLogic\SceneBase.cpp GameLogic\SceneChain\CreateScene.cpp GameLogic\SceneChain\HallScene.cpp GameLogic\SceneChain\KeepAlive.cpp GameLogic\SceneChain\LoginScene.cpp GameLogic\SceneChain\MainScene.cpp GameLogic\SceneChain\RegisterScene.cpp GameLogic\SceneChain\SelectScene.cpp GameLogic\SceneFactory.cpp JiraEvent\JiraEvent.cpp JiraServer.cpp Json\CJsonObject.cpp Server\Server.cpp Utl\Utilitys.cpp
+         command.txt.pb.cc
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(864): warning C4800: “google::protobuf::internal::AtomicWord”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(868): warning C4800: “google::protobuf::internal::Atomic32”: 将值强制为布尔值“true”或“false”(性能警告)
+         scene.txt.pb.cc
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(864): warning C4800: “google::protobuf::internal::AtomicWord”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(868): warning C4800: “google::protobuf::internal::Atomic32”: 将值强制为布尔值“true”或“false”(性能警告)
+         Cache.cpp
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(864): warning C4800: “google::protobuf::internal::AtomicWord”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(868): warning C4800: “google::protobuf::internal::Atomic32”: 将值强制为布尔值“true”或“false”(性能警告)
+         ClientEntity.cpp
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(864): warning C4800: “google::protobuf::internal::AtomicWord”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(868): warning C4800: “google::protobuf::internal::Atomic32”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>ClientEntity\ClientEntity.cpp(111): warning C4244: “初始化”: 从“time_t”转换到“DWORD”，可能丢失数据
+     1>ClientEntity\ClientEntity.cpp(116): warning C4244: “=”: 从“time_t”转换到“DWORD”，可能丢失数据
+         DBServer.cpp
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(864): warning C4800: “google::protobuf::internal::AtomicWord”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(868): warning C4800: “google::protobuf::internal::Atomic32”: 将值强制为布尔值“true”或“false”(性能警告)
+         SceneBase.cpp
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(864): warning C4800: “google::protobuf::internal::AtomicWord”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(868): warning C4800: “google::protobuf::internal::Atomic32”: 将值强制为布尔值“true”或“false”(性能警告)
+         CreateScene.cpp
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(864): warning C4800: “google::protobuf::internal::AtomicWord”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(868): warning C4800: “google::protobuf::internal::Atomic32”: 将值强制为布尔值“true”或“false”(性能警告)
+         HallScene.cpp
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(864): warning C4800: “google::protobuf::internal::AtomicWord”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(868): warning C4800: “google::protobuf::internal::Atomic32”: 将值强制为布尔值“true”或“false”(性能警告)
+         KeepAlive.cpp
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(864): warning C4800: “google::protobuf::internal::AtomicWord”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(868): warning C4800: “google::protobuf::internal::Atomic32”: 将值强制为布尔值“true”或“false”(性能警告)
+         LoginScene.cpp
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(864): warning C4800: “google::protobuf::internal::AtomicWord”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(868): warning C4800: “google::protobuf::internal::Atomic32”: 将值强制为布尔值“true”或“false”(性能警告)
+         MainScene.cpp
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(864): warning C4800: “google::protobuf::internal::AtomicWord”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(868): warning C4800: “google::protobuf::internal::Atomic32”: 将值强制为布尔值“true”或“false”(性能警告)
+         RegisterScene.cpp
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(864): warning C4800: “google::protobuf::internal::AtomicWord”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(868): warning C4800: “google::protobuf::internal::Atomic32”: 将值强制为布尔值“true”或“false”(性能警告)
+         SelectScene.cpp
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(864): warning C4800: “google::protobuf::internal::AtomicWord”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(868): warning C4800: “google::protobuf::internal::Atomic32”: 将值强制为布尔值“true”或“false”(性能警告)
+         SceneFactory.cpp
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(864): warning C4800: “google::protobuf::internal::AtomicWord”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(868): warning C4800: “google::protobuf::internal::Atomic32”: 将值强制为布尔值“true”或“false”(性能警告)
+         JiraEvent.cpp
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(864): warning C4800: “google::protobuf::internal::AtomicWord”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(868): warning C4800: “google::protobuf::internal::Atomic32”: 将值强制为布尔值“true”或“false”(性能警告)
+         JiraServer.cpp
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(864): warning C4800: “google::protobuf::internal::AtomicWord”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(868): warning C4800: “google::protobuf::internal::Atomic32”: 将值强制为布尔值“true”或“false”(性能警告)
+         CJsonObject.cpp
+         Server.cpp
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(864): warning C4800: “google::protobuf::internal::AtomicWord”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(868): warning C4800: “google::protobuf::internal::Atomic32”: 将值强制为布尔值“true”或“false”(性能警告)
+         Utilitys.cpp
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(864): warning C4800: “google::protobuf::internal::AtomicWord”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\google/protobuf/io/coded_stream.h(868): warning C4800: “google::protobuf::internal::Atomic32”: 将值强制为布尔值“true”或“false”(性能警告)
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\HZ\Desktop\shenyj\DNW_Server\Server\ /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt Json\cJSON.c
+         cJSON.c
+     1>Json\cJSON.c(170): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>Json\cJSON.c(172): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>Json\cJSON.c(174): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>Json\cJSON.c(189): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>Json\cJSON.c(193): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>Json\cJSON.c(200): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>Json\cJSON.c(204): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>Json\cJSON.c(262): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : 参见“sscanf”的声明
+     1>Json\cJSON.c(272): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : 参见“sscanf”的声明
+     1>Json\cJSON.c(377): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>Json\cJSON.c(607): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>Json\cJSON.c(757): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>Json\cJSON.c(762): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\JiraServer.exe" /INCREMENTAL:NO /NOLOGO C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\sqlite3.lib C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\libprotocd.lib C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\libprotobufd.lib d3d9.lib d3dx9.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\JiraServer.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\JiraServer.lib" /MACHINE:X86 /SAFESEH Release\command.txt.pb.obj
+         Release\scene.txt.pb.obj
+         Release\Cache.obj
+         Release\ClientEntity.obj
+         Release\DBServer.obj
+         Release\SceneBase.obj
+         Release\CreateScene.obj
+         Release\HallScene.obj
+         Release\KeepAlive.obj
+         Release\LoginScene.obj
+         Release\MainScene.obj
+         Release\RegisterScene.obj
+         Release\SelectScene.obj
+         Release\SceneFactory.obj
+         Release\JiraEvent.obj
+         Release\JiraServer.obj
+         Release\cJSON.obj
+         Release\CJsonObject.obj
+         Release\Server.obj
+         Release\Utilitys.obj
+         正在生成代码
+         已完成代码的生成
+     1>libprotobufd.lib(arena.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(arena.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(extension_set.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(extension_set.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(generated_message_util.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(generated_message_util.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(coded_stream.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(coded_stream.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(zero_copy_stream.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(zero_copy_stream.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(zero_copy_stream_impl_lite.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(zero_copy_stream_impl_lite.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(message_lite.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(message_lite.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(repeated_field.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(repeated_field.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(atomicops_internals_x86_msvc.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(atomicops_internals_x86_msvc.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(common.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(common.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(int128.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(int128.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(once.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(once.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(status.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(status.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(stringpiece.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(stringpiece.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(stringprintf.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(stringprintf.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(structurally_valid.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(structurally_valid.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(strutil.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(strutil.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(wire_format_lite.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(wire_format_lite.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(any.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(any.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(descriptor.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(descriptor.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(descriptor.pb.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(descriptor.pb.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(descriptor_database.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(descriptor_database.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(dynamic_message.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(dynamic_message.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(extension_set_heavy.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(extension_set_heavy.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(generated_message_reflection.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(generated_message_reflection.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(strtod.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(strtod.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(tokenizer.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(tokenizer.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(zero_copy_stream_impl.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(zero_copy_stream_impl.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(map_field.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(map_field.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(message.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(message.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(reflection_ops.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(reflection_ops.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(substitute.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(substitute.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(text_format.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(text_format.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(unknown_field_set.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(unknown_field_set.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobufd.lib(wire_format.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobufd.lib(wire_format.obj)”或在“C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+         Server.vcxproj -> C:\Users\HZ\Desktop\shenyj\DNW_Server\Release\JiraServer.exe
+     1>已完成生成项目“C:\Users\HZ\Desktop\shenyj\DNW_Server\Server\Server.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:18.07

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Utilitys">
+      <UniqueIdentifier>{12b8b3da-7b3c-4b91-a5b4-c8f88cd91f09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database">
+      <UniqueIdentifier>{44e3e101-316e-4d6c-b2b8-baf87c7e0a16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control">
+      <UniqueIdentifier>{0386a2d6-afa2-4fb8-a897-29b17b7ad6a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control\Server">
+      <UniqueIdentifier>{bd717a3c-a2cf-4650-af0e-9a09f25da0e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\Sqlite3">
+      <UniqueIdentifier>{958e1bf2-db4e-4ee6-bd8b-ca86804aca4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\Cache">
+      <UniqueIdentifier>{25aab24a-3e80-470d-852e-48c2d3a42773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control\ClientEntity">
+      <UniqueIdentifier>{e20cfe09-1085-4a6f-a00a-8de49cc0741e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control\JiraEvent">
+      <UniqueIdentifier>{b3663447-6ddf-4a78-867f-64c68e355125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameLogic">
+      <UniqueIdentifier>{3fcf42e9-2321-4a37-aeb1-6a1e0e737e47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameLogic\SceneChain">
+      <UniqueIdentifier>{9016f4e2-35d5-4756-90f7-df97ae519d3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Singleton">
+      <UniqueIdentifier>{1e0872f4-ca55-44ab-a003-5a92fe37d2e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Json">
+      <UniqueIdentifier>{230b2a74-e197-45d9-aadc-8e7a3066cdc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PBMessage">
+      <UniqueIdentifier>{ceea60ad-ce26-4215-87f9-7f97358a5bc5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClientEntity\ClientEntity.h">
+      <Filter>Control\ClientEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="JiraEvent\JiraEvent.h">
+      <Filter>Control\JiraEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Server.h">
+      <Filter>Control\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Cache\Cache.h">
+      <Filter>Database\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="DBServer\DBServer.h">
+      <Filter>Database\Sqlite3</Filter>
+    </ClInclude>
+    <ClInclude Include="Utl\Utilitys.h">
+      <Filter>Utilitys</Filter>
+    </ClInclude>
+    <ClInclude Include="Utl\utility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic\SceneChain\LoginScene.h">
+      <Filter>GameLogic\SceneChain</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic\SceneFactory.h">
+      <Filter>GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic\SceneBase.h">
+      <Filter>GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic\SceneChain\CreateScene.h">
+      <Filter>GameLogic\SceneChain</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic\SceneChain\MainScene.h">
+      <Filter>GameLogic\SceneChain</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic\SceneChain\RegisterScene.h">
+      <Filter>GameLogic\SceneChain</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton\Singleton.h">
+      <Filter>Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Json\cJSON.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="Json\CJsonObject.hpp">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="Json\unistd.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic\SceneChain\HallScene.h">
+      <Filter>GameLogic\SceneChain</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic\SceneChain\SelectScene.h">
+      <Filter>GameLogic\SceneChain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\protoFiles\command.txt.pb.h">
+      <Filter>PBMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\protoFiles\scene.txt.pb.h">
+      <Filter>PBMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic\SceneChain\KeepAlive.h">
+      <Filter>GameLogic\SceneChain</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClientEntity\ClientEntity.cpp">
+      <Filter>Control\ClientEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="JiraEvent\JiraEvent.cpp">
+      <Filter>Control\JiraEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Server.cpp">
+      <Filter>Control\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Cache\Cache.cpp">
+      <Filter>Database\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="DBServer\DBServer.cpp">
+      <Filter>Database\Sqlite3</Filter>
+    </ClCompile>
+    <ClCompile Include="JiraServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Utl\Utilitys.cpp">
+      <Filter>Utilitys</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic\SceneChain\LoginScene.cpp">
+      <Filter>GameLogic\SceneChain</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic\SceneChain\CreateScene.cpp">
+      <Filter>GameLogic\SceneChain</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic\SceneChain\MainScene.cpp">
+      <Filter>GameLogic\SceneChain</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic\SceneChain\RegisterScene.cpp">
+      <Filter>GameLogic\SceneChain</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic\SceneFactory.cpp">
+      <Filter>GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic\SceneBase.cpp">
+      <Filter>GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="Json\cJSON.c">
+      <Filter>Json</Filter>
+    </ClCompile>
+    <ClCompile Include="Json\CJsonObject.cpp">
+      <Filter>Json</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic\SceneChain\HallScene.cpp">
+      <Filter>GameLogic\SceneChain</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic\SceneChain\SelectScene.cpp">
+      <Filter>GameLogic\SceneChain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\protoFiles\command.txt.pb.cc">
+      <Filter>PBMessage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\protoFiles\scene.txt.pb.cc">
+      <Filter>PBMessage</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic\SceneChain\KeepAlive.cpp">
+      <Filter>GameLogic\SceneChain</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+select userID,session_id,userInfo.name,playerInfo.name,roleType from userInfo left Join playerInfo on userInfo.PlayerInfoID=playerInfo.roleID where userInfo.name='qwe';
+
+
+select userID,playerInfo.name from userInfo left Join playerInfo on userInfo.PlayerInfoID=playerInfo.roleID where session_id='qwe';
+
+select roleType,name,userID from playerInfo where roleID = (select PlayerInfoID from userInfo where name = 'qwe');
+
+select roleType,playerInfo.name,userID from userInfo left join playerInfo on userInfo.PlayerInfoID=playerInfo.roleID where userInfo.name='qwe';
+
+
+insert into playerInfo(roleID,roleType,name) values(2,3,'Dfwerqweqwe');

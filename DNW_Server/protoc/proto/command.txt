@@ -1,0 +1,232 @@
+syntax = "proto2";
+package PBMessage;
+import "scene.txt";
+
+enum CommandID
+{
+	ReleaseSkill = 1;
+	MoveToPoint = 2;
+}
+	
+message CMD_ReleaseSkill
+{
+	required int32 roleId= 1;
+	required int32 skillId = 2;
+	required Position3D mouseposition = 3;
+}
+
+message CMD_MoveToPoint
+{
+	required int32 roleId = 1;
+	required Position3D position = 2;
+	required Position3D direction = 3;
+	required Position3D destination = 4;
+}
+
+message Disconnect
+{
+	required int32 roleId = 1;
+}
+
+//当前登录场景
+enum CurScene
+{
+	CS_None = 0;
+	CS_Login = 1;		   			//登录场景  
+	CS_Register = 2;	   			//注册场景	
+	CS_CreateRole = 3; 		//创建角色场景
+	CS_SelectRole = 4; 		//选择角色场景
+	CS_WaitRoom = 5; 			//组队房间场景
+	CS_MainScene = 6;			//游戏场景	
+	CS_KeepAlive = 7;   		//断线检测
+	CS_BreakLineRecon = 8;  //断线重连
+}
+
+//消息类型
+enum MessageType
+{
+	IdInfo = 0;
+	CreateInfo = 1;
+	TextInfo = 2;
+	MoveInfo = 3;
+	DestroyInfo = 4;
+	AsynInfo = 5;
+}
+
+//keepAlive消息
+message KeepAliveMsg
+{
+	required CurScene	curScene = 1;		//子消息
+}
+	
+//登陆消息
+enum LoginReturnType
+{
+	Fail = 0;
+	ToCreateRole = 1;
+	ToSelectRole = 2;
+}
+
+message LoginRequest
+{
+	required string userName = 1;
+	required string passWord = 2;
+}
+
+message LoginReturn
+{
+	required string sessionID = 1;
+	required LoginReturnType returnType = 2;
+	repeated PlayerInfo playerInfo = 3;
+}
+
+//注册消息
+enum RegisterReturnType
+{
+	RT_Fail = 0;
+	RT_Success = 1;
+}
+
+message RegisterRequest
+{
+	required string userName = 1;
+	required string passWord = 2;
+}
+
+message RegisterReturn
+{
+	required RegisterReturnType returnType = 1;
+}
+
+//创建角色消息
+enum CreateRoleReturnType
+{
+	CRT_Fail = 0;
+	CRT_Success = 1;
+}
+
+message CreateRoleRequest
+{
+	required string sessionID = 1;
+	required PlayerInfo playerInfo = 2;
+}
+
+message CreateRoleReturn
+{
+	required CreateRoleReturnType returnType = 1;
+	repeated PlayerInfo playerInfo = 2;
+}
+
+//选择角色消息
+message SelectRoleRequest
+{
+	required string sessionID = 1;
+	required int32  roleType = 2;	//选择的角色
+}
+
+message SelectRoleReturn
+{
+	required int32  userId = 1;		//角色ID
+}
+
+//游戏大厅消息
+enum HallMsgType
+{
+	HST_AutoMatch = 0;			//自动匹配
+	HST_CreateRoom = 1;			//创建房间
+	HST_GetRoomList = 2;			//获取房间列表
+	HST_JoinRoom = 3;				//加入房间
+	HST_GameStart = 4;			//开始游戏
+	HST_WaitTimeout = 5;		//等待玩家准备超时
+	HST_LeaveRoom = 6;			//离开房间
+	HST_CreateRoomFail = 7;		//创建房间失败
+	HST_OnlineFriend = 8;			//查找在线玩家
+	HST_RequestTeam = 9;		//请求组队
+	HST_JoinTeam = 10;			//加入队伍
+	HST_GameWaite = 11;		//准备游戏
+	HST_KeepAlive = 12;		//掉线检测
+}
+
+message HallRequest
+{
+	required string 			sessionID = 1;
+	required HallMsgType	MsgType = 2;		//消息类型
+	optional string 		    roomName = 3;	//请求创建的房间名称
+	optional int32				userId = 4;		//获取好友列表 排除自己
+	optional InviteInfo 		inviteInfo = 5;	//组队信息
+}
+
+message HallReturn
+{
+	optional HallInfo 		hallInfo = 1;
+	optional HallMsgType 	MsgType = 2;
+	
+	optional string	 		roomName = 3;	//房间名称
+	optional int32	 		 	roomID = 4;		//房间ID
+	repeated PlayerInfo		friendList = 5;	//返回玩家列表
+	optional InviteInfo 		inviteInfo = 6;	//组队信息
+}
+
+//游戏主场景消息
+enum GameMainMsgType
+{
+	GMT_KeepAlive = 0;				//掉线检测
+	GMT_RsyncAttr =1;				//同步玩家属性
+	GMT_RsyncStatus = 2;			//同步玩家状态
+	GMT_GameOver = 3;				//游戏结束
+	GMT_BreakLine = 4;  			//断线消息
+}
+
+message GameMainRequest
+{
+	required string 				sessionID = 1;
+	required GameMainMsgType	msgType = 2;		//子消息
+	optional PlayerInfo 		    playerInfo = 3;	//将自己的角色信息发送给服务器进行同步		
+}
+
+message GameMainReturn
+{
+	required GameMainMsgType	msgType = 1;		//子消息
+	repeated PlayerInfo	friendList = 2;			//返回房间内所有玩家信息
+}
+
+
+//网络传输打包
+message Packet
+{
+	required CurScene curScene = 1;									//当前场景
+	optional MessageType msgType = 2;								//消息类型
+	optional LoginRequest loginRequest = 3;						//登陆请求
+	optional LoginReturn loginReturn = 4;						//登陆返回
+	optional RegisterRequest registerRequest = 5;			//注册请求
+	optional RegisterReturn registerReturn = 6;            	//注册返回
+	optional CreateRoleRequest createRoleRequest = 7;	//创建角色请求
+	optional CreateRoleReturn createRoleReturn = 8;    	//创建角色返回 
+	optional SelectRoleRequest selectRoleRequest = 9;	//选择角色请求
+	optional SelectRoleReturn selectRoleReturn = 10;    //选择角色返回 
+	optional HallRequest hallRequest = 11;						//大厅请求
+	optional HallReturn  hallReturn = 12;    						//大厅返回 
+	optional GameMainRequest gameMainRequest = 13;		//主游戏场景请求
+	optional GameMainReturn  gameMainReturn = 14;    		//主游戏场景返回 
+	optional KeepAliveMsg keepAlive = 15;
+}
+
+//网络传输解包
+message UnPacket
+{
+	required CurScene curScene = 1;									//当前场景
+	optional MessageType msgType = 2;								//消息类型
+	optional LoginRequest loginRequest = 3;						//登陆请求
+	optional LoginReturn loginReturn = 4;						//登陆返回
+	optional RegisterRequest registerRequest = 5;			//注册请求
+	optional RegisterReturn registerReturn = 6;            	//注册返回
+	optional CreateRoleRequest createRoleRequest = 7;	//创建角色请求
+	optional CreateRoleReturn createRoleReturn = 8;    	//创建角色返回 
+	optional SelectRoleRequest selectRoleRequest = 9;	//选择角色请求
+	optional SelectRoleReturn selectRoleReturn = 10;    //选择角色返回 
+	optional HallRequest hallRequest = 11;						//大厅请求
+	optional HallReturn  hallReturn = 12;    						//大厅返回 
+	optional GameMainRequest gameMainRequest = 13;		//主游戏场景请求
+	optional GameMainReturn  gameMainReturn = 14;    		//主游戏场景返回  
+	optional KeepAliveMsg keepAlive = 15;
+}

@@ -1,0 +1,99 @@
+syntax = "proto2";
+
+
+package PBMessage;
+
+//队伍身份标示
+enum TeamType
+{
+	Team_A = 1;
+	Team_B = 2;
+}
+
+//玩家在房间内状态
+enum RoomType
+{
+	RT_Idle = 1;		//空闲状态
+	RT_JoinRoom = 2;	//组队中
+	RT_Wait = 3; 		//已准备
+	RT_OK = 4;   			//开始游戏
+}
+
+//玩家主游戏场景内的状态
+enum PlayerStatus
+{
+    PS_None = 	0;
+    PS_Idle = 	1;
+    PS_Run = 	 	2;
+    PS_Q = 		 	3;
+    PS_W = 		 	4;
+    PS_E =  	 	5;
+    PS_R = 		 	6;
+    PS_Death = 	7;
+    PS_CDing =  8;
+}
+
+
+message Position2D
+{
+    required string x = 1;
+	required string y = 2;
+}
+
+message Position3D
+{
+	required string x = 1;
+	required string y = 2;
+	required string z = 3;
+}
+
+//玩家信息
+message PlayerInfo
+{
+	optional int32	 				socket = 1;
+	optional bool						isRoomCtl = 2;			//是否是房主
+	optional int32	 				roleId = 3;				//playerInfo表与userInfo表关联字段
+	optional int32 					roleType = 4;			//角色
+	optional string 				name = 5;	
+	optional int32 					level = 6;	
+	optional float 						hp = 7;	
+	optional float 						mp = 8;	
+	optional float 						attack = 9;	
+	optional float 						moveSpeed = 10;		//移动速度
+	optional TeamType				team = 11;  		  		//队伍
+	optional RoomType 				roomState = 12;		//玩家在房间内的状态
+	optional int32 	   				roomId = 13;				//玩家所在房间ID
+	optional int32 	   				teamId = 14;				//玩家所在队伍座位ID
+	optional bool 	   					gameWaite = 15;		//玩家准备状态
+	optional Position3D 			Pos = 16;					//位置
+	optional Position3D 			Rot = 17;                  //方向
+	optional Position3D 			Scale = 18;				//缩放
+	optional PlayerStatus		playerStatus = 19;	//玩家主游戏场景内的状态
+}
+
+//大厅信息
+message HallInfo
+{
+	repeated RoomInfo roomInfo = 1;		//房间信息
+}
+
+//房间信息
+message RoomInfo
+{
+	optional 	int32 			roomID = 1;					//房间ID
+	required 	string			roomName = 2;				//房间名称
+	required 	int32 			personCount = 3;			//总人数
+	required 	int32 			freePersonCount = 4;	//空闲人数
+	repeated 	PlayerInfo 	playerInfo = 5;			//在房间内具体的玩家信息
+}
+
+//组队邀请信息
+message InviteInfo
+{
+	optional 	int32 		roomID = 1;				//房间ID
+	optional 	int32 		reqUserId = 2;			//邀请人ID
+	optional 	string 	reqUserName = 3;		//邀请人昵称
+	optional 	int32 		revUserId = 4;			//受邀请人ID
+	optional    	TeamType	team = 5;  		  		//队伍
+	optional    	int32		teamId = 6;  			//队伍ID
+}

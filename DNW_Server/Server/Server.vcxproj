@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\protoFiles\command.txt.pb.h" />
+    <ClInclude Include="..\include\protoFiles\scene.txt.pb.h" />
+    <ClInclude Include="Cache\Cache.h" />
+    <ClInclude Include="ClientEntity\ClientEntity.h" />
+    <ClInclude Include="DBServer\DBServer.h" />
+    <ClInclude Include="GameLogic\SceneBase.h" />
+    <ClInclude Include="GameLogic\SceneChain\CreateScene.h" />
+    <ClInclude Include="GameLogic\SceneChain\HallScene.h" />
+    <ClInclude Include="GameLogic\SceneChain\KeepAlive.h" />
+    <ClInclude Include="GameLogic\SceneChain\LoginScene.h" />
+    <ClInclude Include="GameLogic\SceneChain\MainScene.h" />
+    <ClInclude Include="GameLogic\SceneChain\RegisterScene.h" />
+    <ClInclude Include="GameLogic\SceneChain\SelectScene.h" />
+    <ClInclude Include="GameLogic\SceneFactory.h" />
+    <ClInclude Include="JiraEvent\JiraEvent.h" />
+    <ClInclude Include="Json\cJSON.h" />
+    <ClInclude Include="Json\CJsonObject.hpp" />
+    <ClInclude Include="Json\unistd.h" />
+    <ClInclude Include="Server\Server.h" />
+    <ClInclude Include="Singleton\Singleton.h" />
+    <ClInclude Include="Utl\utility.h" />
+    <ClInclude Include="Utl\Utilitys.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\include\protoFiles\command.txt.pb.cc" />
+    <ClCompile Include="..\include\protoFiles\scene.txt.pb.cc" />
+    <ClCompile Include="Cache\Cache.cpp" />
+    <ClCompile Include="ClientEntity\ClientEntity.cpp" />
+    <ClCompile Include="DBServer\DBServer.cpp" />
+    <ClCompile Include="GameLogic\SceneBase.cpp" />
+    <ClCompile Include="GameLogic\SceneChain\CreateScene.cpp" />
+    <ClCompile Include="GameLogic\SceneChain\HallScene.cpp" />
+    <ClCompile Include="GameLogic\SceneChain\KeepAlive.cpp" />
+    <ClCompile Include="GameLogic\SceneChain\LoginScene.cpp" />
+    <ClCompile Include="GameLogic\SceneChain\MainScene.cpp" />
+    <ClCompile Include="GameLogic\SceneChain\RegisterScene.cpp" />
+    <ClCompile Include="GameLogic\SceneChain\SelectScene.cpp" />
+    <ClCompile Include="GameLogic\SceneFactory.cpp" />
+    <ClCompile Include="JiraEvent\JiraEvent.cpp" />
+    <ClCompile Include="JiraServer.cpp" />
+    <ClCompile Include="Json\cJSON.c" />
+    <ClCompile Include="Json\CJsonObject.cpp" />
+    <ClCompile Include="Server\Server.cpp" />
+    <ClCompile Include="Utl\Utilitys.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3B3FEA2E-F28B-4182-B857-038EE2A61966}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Server</RootNamespace>
+    <ProjectName>JiraServer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(LocalDebuggerWorkingDirectory)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkStatus>true</LinkStatus>
+      <AdditionalDependencies>$(LocalDebuggerWorkingDirectory)sqlite3.lib;$(LocalDebuggerWorkingDirectory)libprotocd.lib;$(LocalDebuggerWorkingDirectory)libprotobufd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(LocalDebuggerWorkingDirectory);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>$(LocalDebuggerWorkingDirectory)sqlite3.lib;$(LocalDebuggerWorkingDirectory)libprotocd.lib;$(LocalDebuggerWorkingDirectory)libprotobufd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
